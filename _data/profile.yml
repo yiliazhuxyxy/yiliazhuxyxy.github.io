@@ -19,17 +19,17 @@ portrait_caption: "Xinyi Zhu"
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an M.S. student in Information Networking at Carnegie Mellon University, focused on building production-ready AI agent systems and AI-powered applications. I am seeking AI Agent Engineer and AI Application Engineer opportunities where I can turn emerging AI capabilities into reliable products.
+    I am an M.S. student in Information Networking at Carnegie Mellon University, focused on building production-ready AI agent systems and AI-powered applications.
   </p>
   <p>
-    My experience spans LLM evaluation, multi-agent troubleshooting, knowledge and retrieval systems, and backend infrastructure. I enjoy working across the stack—from agent workflows and retrieval pipelines to scalable services—to make intelligent systems useful, measurable, and dependable in real-world settings.
+    My experience spans agentic workflows, agent evaluation, knowledge and retrieval systems, and backend infrastructure. I enjoy working across the stack—from designing agent workflows and retrieval pipelines to building scalable services—with a focus on making intelligent systems practical, measurable, reliable, and ready for real-world deployment.
   </p>
 short_bio_cn: >-
   <p>
-    我是卡内基梅隆大学信息网络专业硕士研究生，专注于构建可落地的 AI Agent 系统与 AI 应用。目前希望寻找 AI Agent 工程师、AI 应用开发工程师等相关岗位，将前沿 AI 能力转化为可靠、实用的产品。
+    我是卡内基梅隆大学信息网络专业硕士研究生，专注于构建生产级 AI Agent 系统与 AI 应用。
   </p>
   <p>
-    我的实践涵盖 LLM 评估、Multi-Agent 排障、知识与检索系统以及后端基础设施。我喜欢从 Agent Workflow、Retrieval Pipeline 到可扩展服务进行全栈开发，让智能系统在真实场景中更实用、可衡量且稳定可靠。
+    我的经验涵盖 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施。我喜欢从设计 Agent Workflow 和 Retrieval Pipeline 到构建可扩展服务进行全栈开发，致力于让智能系统更加实用、可衡量、可靠，并能够真正部署到实际场景中。
   </p>
 
 education:
