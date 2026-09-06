@@ -110,15 +110,34 @@ div.lazy {
 }
 
 .view-all-inline {
-    display: inline;
-    margin-left: 0.2rem;
-    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 0.55rem;
+    padding: 0.24rem 0.58rem;
+    border: 1px solid #d8e2eb;
+    border-radius: 999px;
+    background: #f6f9fc;
+    color: #42627e;
+    font-size: 0.76rem;
+    font-weight: 600;
+    line-height: 1.2;
+    vertical-align: 0.16rem;
     white-space: nowrap;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .view-all-inline:hover,
 .view-all-inline:focus {
-    text-decoration: underline;
+    border-color: var(--global-theme-color);
+    background: #eef6fc;
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transform: translateX(1px);
+}
+
+.view-all-inline i {
+    font-size: 0.68rem;
 }
 
 .timeline-item {

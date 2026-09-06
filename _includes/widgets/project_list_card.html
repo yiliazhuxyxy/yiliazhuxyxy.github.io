@@ -6,7 +6,7 @@
                     <h3 class="section-title mb-0{% if include.show_more %} section-title-with-link{% endif %}">
                         {% if include.show_more %}<i class="fas fa-star section-title-icon" aria-hidden="true"></i>{% endif %}
                         {{ include.title | default: "Projects" }}{% if include.show_more %}
-                        <a class="view-all-inline" href="{{ '/projects' | relative_url }}" aria-label="View all projects">(view all <span aria-hidden="true">&raquo;</span>)</a>{% endif %}
+                        <a class="view-all-inline" href="{{ '/projects' | relative_url }}" aria-label="View all projects"><span>All projects</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>{% endif %}
                     </h3>
                 </div>
                 {% if include.selected_only %}
