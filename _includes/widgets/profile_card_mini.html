@@ -79,6 +79,12 @@
                         </a>
                         {% endif %}
 
+                        {% if site.data.profile.handshake %}
+                        <a class="px-1 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.handshake }}" aria-label="Handshake">
+                            <i class="fas fa-handshake"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.orcid %}
                         <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
                             <i class="fab fa-orcid"></i>

@@ -3,37 +3,84 @@ secondary_name: ""
 navbar_name: "Xinyi Zhu"
 
 positions:
-  - name: Mechanical Engineering & Computer Science Student
-  - name: Shanghai Jiao Tong University & University of Michigan
+  - name: M.S. Student in Information Networking
+  - name: Carnegie Mellon University
 
 email: "yiliazhuxy@gmail.com"
 github: yiliazhuxyxy
+linkedin: xinyi-zhu-yilia
+handshake: https://app.joinhandshake.com/home
+
+portrait_url: /assets/images/photos/xinyi-zhu.JPG
+portrait_caption: "Xinyi Zhu"
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an undergraduate student studying Mechanical Engineering at the University of Michigan-Shanghai Jiao Tong University Joint Institute and Computer Science at the University of Michigan College of Engineering. My interests span software development, artificial intelligence, robotics, and mechanical design.
+    I am an M.S. student in Information Networking at Carnegie Mellon University with a background in computer science and mechanical engineering. My interests include AI agents, distributed systems, information retrieval, and production software infrastructure.
   </p>
   <p>
-    I enjoy building intelligent physical systems, from autonomous vehicles and soft robotic grippers to computer-vision and augmented-reality applications.
+    I build reliable intelligent systems across the stack, from LLM-powered tools and retrieval systems to distributed search infrastructure.
   </p>
 
 education:
-  - name: Shanghai Jiao Tong University
-    dept: University of Michigan-Shanghai Jiao Tong University Joint Institute
-    position: B.S. in Mechanical Engineering · GPA 3.895/4.00
-    date: Class of 2022
+  - name: Carnegie Mellon University
+    url: https://www.cmu.edu/
+    logo: /assets/images/badges/cmu-logo.png
+    location: Pittsburgh, PA
+    position: Master of Science in Information Networking
+    date: Expected Dec. 2027
+  - name: University of Michigan-Shanghai Jiao Tong University Joint Institute
+    url: https://www.ji.sjtu.edu.cn/
+    logo: /assets/images/badges/sjtu-logo.png
+    location: Shanghai, China
+    position: Bachelor of Engineering in Mechanical Engineering
+    date: Sep. 2022 - Aug. 2026
   - name: University of Michigan
-    dept: College of Engineering
-    position: B.S. in Computer Science
-    date: ""
+    url: https://umich.edu/
+    logo: /assets/images/badges/umich-logo.svg
+    location: Ann Arbor, MI
+    position: Bachelor of Science in Computer Science
+    date: Aug. 2024 - May 2026
+    details:
+      - "GPA: 4.00/4.00"
+      - "Coursework: Web Systems (A+), Operating Systems (A+), System Design of a Search Engine (A+), Machine Learning (A+), Natural Language Processing (A+), Reinforcement Learning (A)"
 
 experience:
-  - name: UM-JI Joint Institute, Shanghai Jiao Tong University
-    dept: Academic Writing Program
-    position: Teaching Assistant
-    date: Sep. 2023 - Dec. 2023
-  - name: UM-JI Student Union, Shanghai Jiao Tong University
-    dept: Publicity Department
-    position: Volunteer
-    date: Sep. 2022 - Aug. 2023
+  - name: ByteDance
+    location: Shanghai, China
+    position: AI Agent Backend Engineer Intern
+    date: May 2026 - Aug. 2026
+    details:
+      - Designed and launched an evaluation framework for an LLM-powered on-call assistant, combining user-adoption signals with LLM-as-a-judge scoring; evaluated 2,900+ response rounds across 1,300+ support chats and surfaced low-quality cases for targeted iteration.
+      - Designed and implemented a Docker Buildx/BuildKit-based WebShell debugging system that decoupled build execution from user sessions, preserved failed-build root filesystems in a shared debug session, and provided each engineer or AI agent an isolated tmux shell for collaborative troubleshooting.
+      - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
+      - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
+
+projects:
+  - name: Distributed Search Engine
+    tech: C++, Distributed Systems, Information Retrieval
+    date: Jan. 2026 - May 2026
+    details:
+      - Built a high-performance C++ indexing pipeline with compressed inverted indexes using delta and variable-byte encoding, reducing index storage by 40%.
+      - Distributed indexing and retrieval across 10 nodes using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to 100M documents at over 1M indexed documents per second.
+      - Ranked 1st among 14 teams in the capstone showcase for search relevance and retrieval efficiency.
+  - name: "Polaris: Graph-Based Research Index & Retrieval System"
+    tech: Python, Neo4j, Cypher, FAISS
+    date: May 2025 - Mar. 2026
+    details:
+      - Built a Neo4j-based knowledge graph and data ingestion pipeline representing concepts, methods, and relationships across 60K+ computer science papers.
+      - Developed a tool-using retrieval agent that combined Cypher graph queries with vector search and employed beam-search-guided multi-path reasoning to identify relevant scientific literature.
+  - name: Advanced Operating Systems
+    tech: C++, Boost, TCP/IP
+    date: Jan. 2025 - May 2025
+    details:
+      - Implemented a single-CPU user-level thread library using ucontext, with FIFO scheduling, timer-interrupt preemption, thread joins, mutexes, and condition variables.
+      - Built a demand-paged virtual memory manager supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
+      - Built a multithreaded TCP RPC file server supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
+  - name: "EXP-Bench: Can AI Conduct AI Research Experiments? (ICLR 2026)"
+    tech: LLMs, Data Pipelines
+    date: Mar. 2025 - May 2025
+    details:
+      - Developed a semi-automated pipeline to extract experimental procedures, configurations, and evaluation criteria from research papers, supplementary materials, and code repositories.
+      - Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation.

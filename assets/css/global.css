@@ -91,3 +91,117 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.section-title {
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #edf0f2;
+}
+
+.timeline-item:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item-no-logo {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.institution-logo-link {
+    flex: 0 0 64px;
+    align-self: flex-start;
+}
+
+.institution-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.timeline-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.timeline-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.item-title {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.item-title a {
+    color: inherit;
+}
+
+.item-subtitle {
+    color: #50565c;
+    margin-top: 0.2rem;
+}
+
+.item-meta {
+    flex: 0 0 auto;
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.item-details {
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.item-details li + li {
+    margin-top: 0.45rem;
+}
+
+.project-item {
+    padding: 1.1rem 0;
+    border-top: 1px solid #edf0f2;
+}
+
+.project-item:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.project-item:last-child {
+    padding-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .timeline-heading {
+        display: block;
+    }
+
+    .item-meta {
+        margin-top: 0.35rem;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .institution-logo-link {
+        flex-basis: 48px;
+    }
+
+    .institution-logo {
+        width: 48px;
+        height: 48px;
+    }
+}
