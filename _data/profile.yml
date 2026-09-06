@@ -36,6 +36,10 @@ education:
     location: Shanghai, China
     position: Bachelor of Engineering in Mechanical Engineering
     date: Sep. 2022 - Aug. 2026
+    honors:
+      - China National Scholarship (top 0.2% nationwide), Ministry of Education of the People's Republic of China (2024)
+      - Undergraduate B-Class Excellent Scholarship (2023, 2024)
+      - The John Wu & Jane Sun Sunshine Scholarship (top 5%) (2023)
   - name: University of Michigan
     url: https://umich.edu/
     logo: /assets/images/badges/umich-logo.svg
@@ -45,6 +49,10 @@ education:
     details:
       - "GPA: 4.00/4.00"
       - "Coursework: Web Systems (A+), Operating Systems (A+), System Design of a Search Engine (A+), Machine Learning (A+), Natural Language Processing (A+), Reinforcement Learning (A)"
+    honors:
+      - James B. Angell Scholar (Mar. 2026)
+      - Dean's List (Dec. 2024, Apr. 2025, Dec. 2025)
+      - University Honors (Dec. 2024, May 2025, Dec. 2025)
 
 experience:
   - name: ByteDance
@@ -119,26 +127,3 @@ projects:
       - Implemented DQN/PPO/A2C variants for symbolic-continuous integration in the Soar architecture.
       - Evaluated performance across environments (CartPole and LunarLander), identifying effects of environment complexity and state discretization.
       - Presented at the 45th Soar Workshop.
-
-honors:
-  - name: China National Scholarship (top 0.2% nationwide)
-    organization: Ministry of Education of the People's Republic of China
-    date: "2024"
-  - name: James B. Angell Scholar
-    organization: University of Michigan
-    date: Mar. 2026
-  - name: Dean's List
-    organization: University of Michigan
-    date: Dec. 2024, Apr. 2025, Dec. 2025
-  - name: University Honors
-    organization: University of Michigan
-    date: Dec. 2024, May 2025, Dec. 2025
-  - name: Undergraduate B-Class Excellent Scholarship
-    organization: Shanghai Jiao Tong University
-    date: 2023, 2024
-  - name: The John Wu & Jane Sun Sunshine Scholarship (top 5%)
-    organization: UM-JI Joint Institute
-    date: "2023"
-  - name: Excellent Volunteer, Student Union
-    organization: UM-JI Joint Institute
-    date: "2022"

@@ -377,30 +377,27 @@ div.lazy {
     line-height: 1;
 }
 
-.honor-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 0.8rem 0;
-    border-top: 1px solid #edf0f2;
+.education-honors {
+    margin-top: 0.55rem;
+    color: #68727d;
+    font-size: 0.82rem;
+    line-height: 1.55;
 }
 
-.honor-item:first-child {
-    border-top: 0;
-    padding-top: 0;
+.education-honors-label {
+    color: #48515a;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
-.honor-item:last-child {
-    padding-bottom: 0;
+.education-honors-label i {
+    color: #b48a00;
+    margin-right: 0.2rem;
 }
 
-.honor-content {
-    min-width: 0;
-}
-
-.honor-date {
-    padding-top: 0.05rem;
+.education-honor-separator {
+    margin: 0 0.4rem;
+    color: #a2a9b0;
 }
 
 @media (max-width: 767.98px) {
@@ -437,11 +434,7 @@ div.lazy {
         min-height: 560px;
     }
 
-    .honor-item {
-        display: block;
-    }
-
-    .honor-date {
-        margin-top: 0.25rem;
+    .education-honors {
+        font-size: 0.78rem;
     }
 }

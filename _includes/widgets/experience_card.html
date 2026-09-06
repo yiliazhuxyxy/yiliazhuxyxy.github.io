@@ -26,6 +26,12 @@
                                 {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
                             </ul>
                             {% endif %}
+                            {% if item.honors %}
+                            <div class="education-honors">
+                                <span class="education-honors-label"><i class="fas fa-award" aria-hidden="true"></i> Honors:</span>
+                                {% for honor in item.honors %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}
+                            </div>
+                            {% endif %}
                         </div>
                     </article>
                     {% endfor %}
@@ -105,27 +111,4 @@
 
 {% if site.data.profile.projects %}
 {% include widgets/project_list_card.html title="Selected Projects" show_more=true selected_only=true %}
-{% endif %}
-
-{% if site.data.profile.honors %}
-<section class="row mt-3">
-    <div class="col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <h3 class="section-title">Honors &amp; Awards</h3>
-                <div class="honors-list">
-                    {% for item in site.data.profile.honors %}
-                    <article class="honor-item">
-                        <div class="honor-content">
-                            <h4 class="item-title">{{ item.name }}</h4>
-                            <div class="item-subtitle">{{ item.organization }}</div>
-                        </div>
-                        <div class="item-meta honor-date">{{ item.date }}</div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 {% endif %}
