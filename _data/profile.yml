@@ -4,7 +4,9 @@ navbar_name: "Xinyi Zhu"
 
 positions:
   - name: M.S. Student in Information Networking
+    name_cn: 信息网络理学硕士在读
   - name: Carnegie Mellon University
+    name_cn: 卡内基梅隆大学
 
 email: "yiliazhuxy@gmail.com"
 github: yiliazhuxyxy
@@ -22,58 +24,102 @@ short_bio: >-
   <p>
     I build reliable intelligent systems across the stack, from LLM-powered tools and retrieval systems to distributed search infrastructure.
   </p>
+short_bio_cn: >-
+  <p>
+    我是卡内基梅隆大学信息网络专业硕士研究生，拥有计算机科学与机械工程背景。我的兴趣方向包括 AI 智能体、分布式系统、信息检索和生产级软件基础设施。
+  </p>
+  <p>
+    我专注于构建可靠的全栈智能系统，涵盖大语言模型工具、检索系统与分布式搜索基础设施。
+  </p>
 
 education:
   - name: Carnegie Mellon University
+    name_cn: 卡内基梅隆大学
     url: https://www.cmu.edu/
     logo: /assets/images/badges/cmu-logo.png
     location: Pittsburgh, PA
+    location_cn: 美国宾夕法尼亚州匹兹堡
     position: Master of Science in Information Networking
+    position_cn: 信息网络理学硕士
     date: Expected Dec. 2027
+    date_cn: 预计 2027年12月毕业
   - name: University of Michigan-Shanghai Jiao Tong University Joint Institute
+    name_cn: 上海交通大学密西根学院
     url: https://www.ji.sjtu.edu.cn/
     logo: /assets/images/badges/sjtu-logo.png
     location: Shanghai, China
+    location_cn: 中国上海
     position: Bachelor of Engineering in Mechanical Engineering
+    position_cn: 机械工程工学学士
     date: Sep. 2022 - Aug. 2026
+    date_cn: 2022年9月 – 2026年8月
     details:
       - "GPA: 3.85"
+    details_cn:
+      - "GPA：3.85"
     honors:
       - China National Scholarship (top 0.2% nationwide), Ministry of Education of the People's Republic of China (2024)
       - Undergraduate B-Class Excellent Scholarship (2023, 2024)
       - The John Wu & Jane Sun Sunshine Scholarship (top 5%) (2023)
+    honors_cn:
+      - 国家奖学金（全国前 0.2%），中华人民共和国教育部（2024）
+      - 上海交通大学本科生 B 等优秀奖学金（2023、2024）
+      - 吴炯与孙洁阳光奖学金（前 5%）（2023）
   - name: University of Michigan
+    name_cn: 密西根大学
     url: https://umich.edu/
     logo: /assets/images/badges/umich-logo.svg
     location: Ann Arbor, MI
+    location_cn: 美国密歇根州安娜堡
     position: Bachelor of Science in Computer Science
+    position_cn: 计算机科学理学学士
     date: Aug. 2024 - May 2026
+    date_cn: 2024年8月 – 2026年5月
     details:
       - "GPA: 4.00/4.00"
       - "Coursework: Web Systems, Operating Systems, System Design of a Search Engine, Machine Learning, Natural Language Processing, Reinforcement Learning"
+    details_cn:
+      - "GPA：4.00/4.00"
+      - "相关课程：Web 系统、操作系统、搜索引擎系统设计、机器学习、自然语言处理、强化学习"
     honors:
       - James B. Angell Scholar (Mar. 2026)
       - Dean's List (Dec. 2024, Apr. 2025, Dec. 2025)
       - University Honors (Dec. 2024, May 2025, Dec. 2025)
+    honors_cn:
+      - James B. Angell Scholar（2026年3月）
+      - 院长名单（2024年12月、2025年4月、2025年12月）
+      - University Honors（2024年12月、2025年5月、2025年12月）
 
 experience:
   - name: ByteDance
+    name_cn: 字节跳动
     location: Shanghai, China
+    location_cn: 中国上海
     position: AI Agent Backend Engineer Intern
+    position_cn: AI 智能体后端工程师实习生
     date: May 2026 - Aug. 2026
+    date_cn: 2026年5月 – 2026年8月
     details:
       - Designed and launched an evaluation framework for an LLM-powered on-call assistant, combining user-adoption signals with LLM-as-a-judge scoring; evaluated 2,900+ response rounds across 1,300+ support chats and surfaced low-quality cases for targeted iteration.
       - Designed and implemented a Docker Buildx/BuildKit-based WebShell debugging system that decoupled build execution from user sessions, preserved failed-build root filesystems in a shared debug session, and provided each engineer or AI agent an isolated tmux shell for collaborative troubleshooting.
       - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
       - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
+    details_cn:
+      - 设计并上线面向大语言模型值班助手的评估框架，结合用户采纳信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
+      - 设计并实现基于 Docker Buildx/BuildKit 的 WebShell 调试系统，将构建执行与用户会话解耦，在共享调试会话中保留失败构建的根文件系统，并为每位工程师或 AI 智能体提供隔离的 tmux shell。
+      - 扩展面向容器镜像构建失败的多智能体值班排障系统，开发场景化 SOP-as-code 工作流、优化智能体路由与提示词并集成构建上下文工具；<strong>AI 贡献评分提升 15.3%，MTTR 降低 11.4%</strong>。
+      - 构建自演进大语言模型知识库，通过聚类问题及一致答案，将 <strong>10K+ 支持会话</strong>提炼为带置信度的问答，并利用人工反馈解决冲突、更新过时知识；<strong>召回 40.1% 的未回答问题，有效回复率从 69.3% 提升至 73.9%</strong>。
 
 publications:
   - title: "EXP-Bench: Can AI Conduct AI Research Experiments?"
+    title_cn: "EXP-Bench：AI 能否开展 AI 研究实验？"
     venue: International Conference on Learning Representations (ICLR) 2026
+    venue_cn: 国际学习表征会议（ICLR）2026
     year: 2025
     authors: "Kon, P. T. J., Liu, J., <strong>Zhu, X.</strong>, Ding, Q., Peng, J., Xing, J., Huang, Y., Qiu, Y., Srinivasa, J., Lee, M., Chowdhury, M., Zaharia, M., & Chen, A."
     citation: "arXiv preprint arXiv:2505.24785"
     description: Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation, including a semi-automated pipeline for extracting experimental procedures, configurations, and evaluation criteria from papers, supplementary materials, and code repositories.
+    description_cn: 参与构建可扩展基准，从科学文献中重建可执行研究任务，以评估 AI 智能体开展真实实验的能力；其中包括一套半自动化流水线，用于从论文、补充材料和代码仓库中提取实验流程、配置及评估标准。
     image: /assets/images/covers/exp-bench-overview.png
     paper: https://arxiv.org/pdf/2505.24785
     code: https://github.com/Just-Curieous/EXP-Bench
@@ -81,55 +127,96 @@ publications:
 
 projects:
   - name: Distributed Search Engine
+    name_cn: 分布式搜索引擎
     tech: C++, Distributed Systems, Information Retrieval
+    tech_cn: C++、分布式系统、信息检索
     date: Jan. 2026 - May 2026
+    date_cn: 2026年1月 – 2026年5月
     selected: true
     presentation: /output/pdf/the-ranking-hat-project.pdf
     details:
       - Built a <strong>high-performance C++ indexing pipeline</strong> with compressed inverted indexes using delta and variable-byte encoding, <strong>reducing index storage by 40%</strong>.
       - Distributed indexing and retrieval across <strong>10 nodes</strong> using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to <strong>100M documents</strong> at <strong>over 1M indexed documents per second</strong>.
       - <strong>Ranked 1st among 14 teams</strong> in the capstone showcase for search relevance and retrieval efficiency.
+    details_cn:
+      - 构建<strong>高性能 C++ 索引流水线</strong>，使用差分编码与变长字节编码压缩倒排索引，<strong>索引存储空间减少 40%</strong>。
+      - 利用索引分片、并行本地排序和 scatter-gather 聚合，在 <strong>10 个节点</strong>上实现分布式索引与检索，扩展至 <strong>1 亿篇文档</strong>，索引速度<strong>超过每秒 100 万篇文档</strong>。
+      - 在结课项目展示中，搜索相关性与检索效率<strong>位列 14 支团队第 1 名</strong>。
   - name: "Polaris: Graph-Based Research Index & Retrieval System"
+    name_cn: "Polaris：基于图的科研索引与检索系统"
     tech: Python, Neo4j, Cypher, FAISS
+    tech_cn: Python、Neo4j、Cypher、FAISS
     date: May 2025 - Mar. 2026
+    date_cn: 2025年5月 – 2026年3月
     selected: true
     details:
       - Built a <strong>Neo4j-based knowledge graph and data ingestion pipeline</strong> representing concepts, methods, and relationships across <strong>60K+ computer science papers</strong>.
       - Developed a <strong>tool-using retrieval agent</strong> that combined Cypher graph queries with vector search and employed <strong>beam-search-guided multi-path reasoning</strong> to identify relevant scientific literature.
+    details_cn:
+      - 构建<strong>基于 Neo4j 的知识图谱与数据摄取流水线</strong>，表示 <strong>6 万余篇计算机科学论文</strong>中的概念、方法及其关系。
+      - 开发<strong>工具调用型检索智能体</strong>，结合 Cypher 图查询与向量搜索，并使用<strong>束搜索引导的多路径推理</strong>定位相关科学文献。
   - name: Open-domain Scientific Claim Verification
+    name_cn: 开放域科学论断验证
     tech: Programmer · MultiVerS, LoRA, PICO, Biomedical NLP
+    tech_cn: 程序开发 · MultiVerS、LoRA、PICO、生物医学自然语言处理
     date: Sep. 2025 - Dec. 2025
+    date_cn: 2025年9月 – 2025年12月
     selected: false
     presentation: /output/posters/multivers-pico-poster.png
     presentation_label: "Architecture, Design & Results"
+    presentation_label_cn: 架构、设计与结果
     code: https://github.com/ping-haonan/MultiVerS-PICO
     details:
       - Enhanced MultiVerS with <strong>parameter-efficient LoRA fine-tuning</strong> and <strong>PICO-augmented inputs</strong> for biomedical claim verification.
       - Improved sentence-level rationale extraction on SciFact-Open, achieving <strong>11.52% precision</strong>, <strong>5.62% recall</strong>, and <strong>7.56% F1 gains</strong>.
+    details_cn:
+      - 通过<strong>参数高效的 LoRA 微调</strong>与<strong>融合 PICO 的输入</strong>增强 MultiVerS，用于生物医学论断验证。
+      - 改进 SciFact-Open 上的句子级依据提取，取得<strong>精确率 11.52%</strong>、<strong>召回率 5.62%</strong>和 <strong>F1 7.56%</strong> 的提升。
   - name: GPT Reproduction
+    name_cn: GPT 模型复现
     tech: Programmer · GPT-style Decoder, FineWeb, SmolTalk
+    tech_cn: 程序开发 · GPT 风格解码器、FineWeb、SmolTalk
     date: Oct. 2025 - Nov. 2025
+    date_cn: 2025年10月 – 2025年11月
     selected: false
     details:
       - Implemented a <strong>GPT-style decoder model with 60M parameters</strong> and conducted pretraining on the FineWeb dataset, followed by supervised fine-tuning on SmolTalk to enable dialogue capability.
       - Achieved a basic chatbot capable of coherent dialogue after <strong>15-hour pretraining</strong> and <strong>4-hour fine-tuning</strong>.
+    details_cn:
+      - 实现<strong>包含 6,000 万参数的 GPT 风格解码器模型</strong>，在 FineWeb 数据集上预训练，并在 SmolTalk 上进行监督微调以获得对话能力。
+      - 经过<strong>15 小时预训练</strong>和<strong>4 小时微调</strong>，得到具备连贯对话能力的基础聊天机器人。
   - name: Advanced Operating Systems
+    name_cn: 高级操作系统
     tech: C++, Boost, TCP/IP
+    tech_cn: C++、Boost、TCP/IP
     date: Jan. 2025 - May 2025
+    date_cn: 2025年1月 – 2025年5月
     selected: true
     details:
       - Implemented a <strong>single-CPU user-level thread library</strong> using ucontext, with FIFO scheduling, timer-interrupt preemption, thread joins, mutexes, and condition variables.
       - Built a <strong>demand-paged virtual memory manager</strong> supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
       - Built a <strong>multithreaded TCP RPC file server</strong> supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
+    details_cn:
+      - 使用 ucontext 实现<strong>单 CPU 用户级线程库</strong>，支持 FIFO 调度、定时器中断抢占、线程 join、互斥锁和条件变量。
+      - 构建<strong>按需分页虚拟内存管理器</strong>，支持 swap-backed 与 file-backed 页面、时钟置换、脏页/引用追踪、交换空间预留以及基于固定零页的写时复制。
+      - 构建<strong>多线程 TCP RPC 文件服务器</strong>，支持分层路径遍历、并发文件创建、删除、读取和写入，并实现 inode 级共享/排他锁及空闲块同步分配。
   - name: Evaluating Scalable RL Alternatives to Q-Learning in Soar
+    name_cn: 在 Soar 中评估可扩展的 Q-Learning 替代强化学习方法
     tech: "Student Research Assistant · Explore CS Research Program, University of Michigan · Advisor: Dr. Robert Wray"
+    tech_cn: 学生研究助理 · 密西根大学 Explore CS Research Program · 指导教师：Robert Wray 博士
     date: Nov. 2024 - May 2025
+    date_cn: 2024年11月 – 2025年5月
     selected: false
     presentation: /output/posters/explorecs-rl-poster.png
     presentation_label: "Architecture, Design & Results"
+    presentation_label_cn: 架构、设计与结果
     code: https://github.com/Center-for-Integrated-Cognition/hybrid-discrete-continuous-RL
     video: https://www.youtube.com/watch?v=wS2sKQ1Quu8
     details:
       - Implemented <strong>DQN/PPO/A2C variants</strong> for symbolic-continuous integration in the Soar architecture.
       - Evaluated performance across <strong>CartPole and LunarLander</strong>, identifying effects of environment complexity and state discretization.
       - Presented at the <strong>45th Soar Workshop</strong>.
+    details_cn:
+      - 为 Soar 架构中的符号—连续信息融合实现 <strong>DQN/PPO/A2C 变体</strong>。
+      - 在 <strong>CartPole 和 LunarLander</strong> 环境中评估性能，分析环境复杂度和状态离散化的影响。
+      - 在<strong>第 45 届 Soar Workshop</strong> 展示研究成果。

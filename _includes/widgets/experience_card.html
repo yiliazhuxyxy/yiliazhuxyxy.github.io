@@ -3,7 +3,7 @@
     <div class="col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 class="section-title">Education</h3>
+                <h3 class="section-title">{% include bilingual.html en="Education" cn="教育经历" %}</h3>
                 <div class="timeline-list">
                     {% for item in site.data.profile.education %}
                     <article class="timeline-item">
@@ -13,23 +13,25 @@
                         <div class="timeline-content">
                             <div class="timeline-heading">
                                 <div>
-                                    <h4 class="item-title"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a></h4>
-                                    <div class="item-subtitle">{{ item.position }}</div>
+                                    <h4 class="item-title"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{% include bilingual.html en=item.name cn=item.name_cn %}</a></h4>
+                                    <div class="item-subtitle">{% include bilingual.html en=item.position cn=item.position_cn %}</div>
                                 </div>
                                 <div class="item-meta">
-                                    <div>{{ item.date }}</div>
-                                    <div>{{ item.location }}</div>
+                                    <div>{% include bilingual.html en=item.date cn=item.date_cn %}</div>
+                                    <div>{% include bilingual.html en=item.location cn=item.location_cn %}</div>
                                 </div>
                             </div>
                             {% if item.details %}
                             <ul class="item-details">
-                                {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
+                                {% for detail in item.details %}<li class="lang-en">{{ detail }}</li>{% endfor %}
+                                {% for detail in item.details_cn %}<li class="lang-cn">{{ detail }}</li>{% endfor %}
                             </ul>
                             {% endif %}
                             {% if item.honors %}
                             <div class="education-honors">
-                                <span class="education-honors-label"><i class="fas fa-award" aria-hidden="true"></i> Honors:</span>
-                                {% for honor in item.honors %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}
+                                <span class="education-honors-label"><i class="fas fa-award" aria-hidden="true"></i> {% include bilingual.html en="Honors:" cn="荣誉：" %}</span>
+                                <span class="lang-en">{% for honor in item.honors %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}</span>
+                                <span class="lang-cn">{% for honor in item.honors_cn %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}</span>
                             </div>
                             {% endif %}
                         </div>
@@ -47,22 +49,23 @@
     <div class="col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 class="section-title">Work Experience</h3>
+                <h3 class="section-title">{% include bilingual.html en="Work Experience" cn="工作经历" %}</h3>
                 {% for item in site.data.profile.experience %}
                 <article class="timeline-item timeline-item-no-logo">
                     <div class="timeline-content">
                         <div class="timeline-heading">
                             <div>
-                                <h4 class="item-title">{{ item.name }}</h4>
-                                <div class="item-subtitle">{{ item.position }}</div>
+                                <h4 class="item-title">{% include bilingual.html en=item.name cn=item.name_cn %}</h4>
+                                <div class="item-subtitle">{% include bilingual.html en=item.position cn=item.position_cn %}</div>
                             </div>
                             <div class="item-meta">
-                                <div>{{ item.date }}</div>
-                                <div>{{ item.location }}</div>
+                                <div>{% include bilingual.html en=item.date cn=item.date_cn %}</div>
+                                <div>{% include bilingual.html en=item.location cn=item.location_cn %}</div>
                             </div>
                         </div>
                         <ul class="item-details">
-                            {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
+                            {% for detail in item.details %}<li class="lang-en">{{ detail }}</li>{% endfor %}
+                            {% for detail in item.details_cn %}<li class="lang-cn">{{ detail }}</li>{% endfor %}
                         </ul>
                     </div>
                 </article>
@@ -78,26 +81,26 @@
     <div class="col-12">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 class="section-title">Publications</h3>
+                <h3 class="section-title">{% include bilingual.html en="Publications" cn="论文发表" %}</h3>
                 {% for item in site.data.profile.publications %}
                 <article class="publication-profile-item row no-gutters">
                     <a class="publication-image-link col-md-3" href="{{ item.paper }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ item.title }} paper">
                         <img class="publication-image" src="{{ item.image | relative_url }}" alt="Overview of the EXP-Bench data collection and task validation pipeline">
                     </a>
                     <div class="publication-content col-md-9 pl-md-4">
-                        <h4 class="publication-title">{{ item.title }}</h4>
+                        <h4 class="publication-title">{% include bilingual.html en=item.title cn=item.title_cn %}</h4>
                         <div class="publication-authors">{{ item.authors }}</div>
-                        <div class="publication-venue"><em>{{ item.venue }}</em></div>
-                        <p class="publication-description">{{ item.description }}</p>
+                        <div class="publication-venue"><em>{% include bilingual.html en=item.venue cn=item.venue_cn %}</em></div>
+                        <p class="publication-description">{% include bilingual.html en=item.description cn=item.description_cn %}</p>
                         <div class="publication-links">
                             <a class="publication-resource-link resource-arxiv" href="{{ item.paper }}" target="_blank" rel="noopener noreferrer" aria-label="Read the EXP-Bench paper on arXiv">
-                                <i class="ai ai-arxiv" aria-hidden="true"></i><span>Paper</span>
+                                <i class="ai ai-arxiv" aria-hidden="true"></i>{% include bilingual.html en="Paper" cn="论文" %}
                             </a>
                             <a class="publication-resource-link resource-github" href="{{ item.code }}" target="_blank" rel="noopener noreferrer" aria-label="View the EXP-Bench source code on GitHub">
-                                <i class="fab fa-github" aria-hidden="true"></i><span>Code</span>
+                                <i class="fab fa-github" aria-hidden="true"></i>{% include bilingual.html en="Code" cn="代码" %}
                             </a>
                             <a class="publication-resource-link resource-huggingface" href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer" aria-label="View the EXP-Bench dataset on Hugging Face">
-                                <span class="huggingface-icon" aria-hidden="true">🤗</span><span>Dataset</span>
+                                <span class="huggingface-icon" aria-hidden="true">🤗</span>{% include bilingual.html en="Dataset" cn="数据集" %}
                             </a>
                         </div>
                     </div>
@@ -110,5 +113,5 @@
 {% endif %}
 
 {% if site.data.profile.projects %}
-{% include widgets/project_list_card.html title="Selected Projects" show_more=true selected_only=true %}
+{% include widgets/project_list_card.html title="Selected Projects" title_cn="精选项目" show_more=true selected_only=true %}
 {% endif %}

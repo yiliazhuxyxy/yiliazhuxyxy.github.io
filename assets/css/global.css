@@ -92,6 +92,41 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+html:not([data-language="cn"]) .lang-cn,
+html[data-language="cn"] .lang-en {
+    display: none !important;
+}
+
+.language-switch-item {
+    display: flex;
+    align-items: center;
+    margin-left: 0.45rem;
+}
+
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.28rem 0.62rem;
+    border: 1px solid #d7dfe6;
+    border-radius: 999px;
+    background: #f7f9fb;
+    color: #496477;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.language-switch:hover,
+.language-switch:focus {
+    border-color: var(--global-theme-color);
+    background: #eef6fc;
+    color: var(--global-theme-color);
+    outline: none;
+}
+
 .section-title {
     font-size: 1.35rem;
     margin-bottom: 1.25rem;
@@ -368,6 +403,10 @@ div.lazy {
 }
 
 @media (max-width: 767.98px) {
+    .language-switch-item {
+        margin: 0.35rem 0 0.45rem;
+    }
+
     .timeline-heading {
         display: block;
     }

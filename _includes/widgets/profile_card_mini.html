@@ -29,7 +29,7 @@
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
-                        {{ position.name }}<br/>
+                        {% include bilingual.html en=position.name cn=position.name_cn %}<br/>
                         {% endfor %}
                     </div>
                 </div>
