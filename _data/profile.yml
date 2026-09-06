@@ -26,10 +26,10 @@ short_bio: >-
   </p>
 short_bio_cn: >-
   <p>
-    我是卡内基梅隆大学信息网络专业硕士研究生，专注于构建生产级 AI Agent 系统与 AI 应用。
+    我是卡内基梅隆大学 Information Networking 硕士研究生，主要关注 AI Agent 系统和 AI 应用的开发。
   </p>
   <p>
-    我的经验涵盖 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施。我喜欢从设计 Agent Workflow 和 Retrieval Pipeline 到构建可扩展服务进行全栈开发，致力于让智能系统更加实用、可衡量、可靠，并能够真正部署到实际场景中。
+    我做过 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施相关的工作和项目。相比只让模型“能跑起来”，我也关注一个 AI 系统在真实场景里是否真的好用、稳定，以及能不能被有效评估和持续改进。
   </p>
 
 education:
@@ -105,7 +105,7 @@ experience:
       - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
       - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
     details_cn:
-      - 设计并上线面向 LLM oncall 助手的评估框架，结合用户采纳信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
+      - 设计并上线 智能编译 Oncall 助手的评估框架，结合用户反馈信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
       - 设计并实现基于 Docker Buildx/BuildKit 的 WebShell 调试系统，将构建执行与用户会话解耦，在共享调试会话中保留失败构建的根文件系统，并为每位工程师或 AI Agent 提供隔离的 tmux shell。
       - 扩展面向容器镜像构建失败的 Multi-Agent oncall 排障系统，开发场景化 SOP-as-code 工作流、优化 Agent 路由与 Prompt 并集成构建上下文工具；<strong>AI 贡献评分提升 15.3%，MTTR 降低 11.4%</strong>。
       - 构建自演进 LLM 知识库，通过聚类问题及一致答案，将 <strong>10K+ 支持会话</strong>提炼为带置信度的问答，并利用人工反馈解决冲突、更新过时知识；<strong>召回 40.1% 的未回答问题，有效回复率从 69.3% 提升至 73.9%</strong>。
@@ -141,7 +141,7 @@ projects:
     details_cn:
       - 构建<strong>高性能 C++ 索引流水线</strong>，使用差分编码与变长字节编码压缩倒排索引，<strong>索引存储空间减少 40%</strong>。
       - 利用索引分片、并行本地排序和 scatter-gather 聚合，在 <strong>10 个节点</strong>上实现分布式索引与检索，扩展至 <strong>1 亿篇文档</strong>，索引速度<strong>超过每秒 100 万篇文档</strong>。
-      - 在结课项目展示中，搜索相关性与检索效率<strong>位列 14 支团队第 1 名</strong>。
+      - 在毕业设计项目中，搜索相关性与检索效率<strong>位列 14 支团队第 1 名</strong>。
   - name: "Polaris: Graph-Based Research Index & Retrieval System"
     name_cn: "Polaris：基于图的科研索引与检索系统"
     tech: Python, Neo4j, Cypher, FAISS
