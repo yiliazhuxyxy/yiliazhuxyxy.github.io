@@ -84,9 +84,15 @@
                         <div class="publication-venue"><em>{{ item.venue }}</em></div>
                         <p class="publication-description">{{ item.description }}</p>
                         <div class="publication-links">
-                            <a href="{{ item.paper }}" target="_blank" rel="noopener noreferrer">[Paper]</a>
-                            <a href="{{ item.code }}" target="_blank" rel="noopener noreferrer">[Code]</a>
-                            <a href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer">[Dataset]</a>
+                            <a class="publication-resource-link resource-arxiv" href="{{ item.paper }}" target="_blank" rel="noopener noreferrer" aria-label="Read the EXP-Bench paper on arXiv">
+                                <i class="ai ai-arxiv" aria-hidden="true"></i><span>Paper</span>
+                            </a>
+                            <a class="publication-resource-link resource-github" href="{{ item.code }}" target="_blank" rel="noopener noreferrer" aria-label="View the EXP-Bench source code on GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i><span>Code</span>
+                            </a>
+                            <a class="publication-resource-link resource-huggingface" href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer" aria-label="View the EXP-Bench dataset on Hugging Face">
+                                <span class="huggingface-icon" aria-hidden="true">🤗</span><span>Dataset</span>
+                            </a>
                         </div>
                     </div>
                 </article>
