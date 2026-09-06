@@ -36,6 +36,8 @@ education:
     location: Shanghai, China
     position: Bachelor of Engineering in Mechanical Engineering
     date: Sep. 2022 - Aug. 2026
+    details:
+      - "GPA: 3.85"
     honors:
       - China National Scholarship (top 0.2% nationwide), Ministry of Education of the People's Republic of China (2024)
       - Undergraduate B-Class Excellent Scholarship (2023, 2024)
@@ -48,7 +50,7 @@ education:
     date: Aug. 2024 - May 2026
     details:
       - "GPA: 4.00/4.00"
-      - "Coursework: Web Systems (A+), Operating Systems (A+), System Design of a Search Engine (A+), Machine Learning (A+), Natural Language Processing (A+), Reinforcement Learning (A)"
+      - "Coursework: Web Systems, Operating Systems, System Design of a Search Engine, Machine Learning, Natural Language Processing, Reinforcement Learning"
     honors:
       - James B. Angell Scholar (Mar. 2026)
       - Dean's List (Dec. 2024, Apr. 2025, Dec. 2025)
