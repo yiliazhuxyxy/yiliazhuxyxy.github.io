@@ -1,0 +1,32 @@
+<section class="row mt-3">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <div class="section-heading-row">
+                    <h3 class="section-title mb-0">{{ include.title | default: "Projects" }}</h3>
+                    {% if include.show_more %}
+                    <a class="see-more-link" href="{{ '/projects' | relative_url }}" aria-label="See all projects">
+                        See more <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="project-list">
+                    {% for item in site.data.profile.projects %}
+                    <article class="project-item">
+                        <div class="timeline-heading">
+                            <div>
+                                <h4 class="item-title">{{ item.name }}</h4>
+                                <div class="item-subtitle">{{ item.tech }}</div>
+                            </div>
+                            <div class="item-meta">{{ item.date }}</div>
+                        </div>
+                        <ul class="item-details">
+                            {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
+                        </ul>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

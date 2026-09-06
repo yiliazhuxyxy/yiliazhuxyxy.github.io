@@ -94,27 +94,5 @@
 {% endif %}
 
 {% if site.data.profile.projects %}
-<section class="row mt-3">
-    <div class="col-12">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <h3 class="section-title">Projects</h3>
-                {% for item in site.data.profile.projects %}
-                <article class="project-item">
-                    <div class="timeline-heading">
-                        <div>
-                            <h4 class="item-title">{{ item.name }}</h4>
-                            <div class="item-subtitle">{{ item.tech }}</div>
-                        </div>
-                        <div class="item-meta">{{ item.date }}</div>
-                    </div>
-                    <ul class="item-details">
-                        {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
-                    </ul>
-                </article>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
+{% include widgets/project_list_card.html title="Selected Projects" show_more=true %}
 {% endif %}

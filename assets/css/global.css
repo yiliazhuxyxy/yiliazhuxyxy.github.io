@@ -97,6 +97,31 @@ div.lazy {
     margin-bottom: 1.25rem;
 }
 
+.section-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.see-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.see-more-link i {
+    transition: transform 0.2s ease;
+}
+
+.see-more-link:hover i,
+.see-more-link:focus i {
+    transform: translateX(3px);
+}
+
 .timeline-item {
     display: flex;
     gap: 1rem;
