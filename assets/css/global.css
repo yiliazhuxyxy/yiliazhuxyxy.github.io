@@ -98,28 +98,27 @@ div.lazy {
 }
 
 .section-heading-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     margin-bottom: 1.25rem;
 }
 
-.see-more-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-weight: 700;
+.section-title-icon {
+    margin-right: 0.35rem;
+}
+
+.section-title-with-link {
     white-space: nowrap;
 }
 
-.see-more-link i {
-    transition: transform 0.2s ease;
+.view-all-inline {
+    display: inline;
+    margin-left: 0.2rem;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
-.see-more-link:hover i,
-.see-more-link:focus i {
-    transform: translateX(3px);
+.view-all-inline:hover,
+.view-all-inline:focus {
+    text-decoration: underline;
 }
 
 .timeline-item {
