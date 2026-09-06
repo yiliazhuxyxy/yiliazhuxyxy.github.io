@@ -59,11 +59,12 @@ experience:
 
 publications:
   - title: "EXP-Bench: Can AI Conduct AI Research Experiments?"
-    venue: ICLR 2026
+    venue: International Conference on Learning Representations (ICLR) 2026
     year: 2025
     authors: "Kon, P. T. J., Liu, J., <strong>Zhu, X.</strong>, Ding, Q., Peng, J., Xing, J., Huang, Y., Qiu, Y., Srinivasa, J., Lee, M., Chowdhury, M., Zaharia, M., & Chen, A."
     citation: "arXiv preprint arXiv:2505.24785"
     description: Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation, including a semi-automated pipeline for extracting experimental procedures, configurations, and evaluation criteria from papers, supplementary materials, and code repositories.
+    image: /assets/images/covers/exp-bench-overview.png
     paper: https://arxiv.org/pdf/2505.24785
     code: https://github.com/Just-Curieous/EXP-Bench
     dataset: https://huggingface.co/datasets/Just-Curieous/EXP-Bench

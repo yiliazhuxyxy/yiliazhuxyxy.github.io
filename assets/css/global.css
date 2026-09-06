@@ -211,29 +211,51 @@ div.lazy {
 }
 
 .publication-profile-item {
-    line-height: 1.55;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    line-height: 1.4;
+}
+
+.publication-image-link {
+    flex: 0 0 34%;
+}
+
+.publication-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.35rem;
+}
+
+.publication-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.publication-title {
+    font-size: 1.2rem;
+    margin: 0 0 0.35rem;
 }
 
 .publication-venue {
     color: #495057;
-    font-weight: 700;
-    margin-top: 0.25rem;
+    margin-top: 0.2rem;
 }
 
-.publication-authors,
-.publication-citation {
+.publication-authors {
     color: #50565c;
-    margin-top: 0.3rem;
 }
 
 .publication-description {
-    margin: 0.75rem 0;
+    color: #687078;
+    margin: 0.45rem 0 0.35rem;
 }
 
 .publication-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.9rem;
+    gap: 0.45rem;
 }
 
 @media (max-width: 767.98px) {
@@ -254,5 +276,14 @@ div.lazy {
     .institution-logo {
         width: 48px;
         height: 48px;
+    }
+
+    .publication-profile-item {
+        display: block;
+    }
+
+    .publication-image-link {
+        display: block;
+        margin-bottom: 1rem;
     }
 }

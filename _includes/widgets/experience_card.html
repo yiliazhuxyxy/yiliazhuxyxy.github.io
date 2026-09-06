@@ -75,15 +75,19 @@
                 <h3 class="section-title">Publications</h3>
                 {% for item in site.data.profile.publications %}
                 <article class="publication-profile-item">
-                    <h4 class="item-title">{{ item.title }}</h4>
-                    <div class="publication-venue">{{ item.venue }}</div>
-                    <div class="publication-authors">{{ item.authors }}</div>
-                    <div class="publication-citation">{{ item.year }}. {{ item.citation }}.</div>
-                    <p class="publication-description">{{ item.description }}</p>
-                    <div class="publication-links">
-                        <a href="{{ item.paper }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
-                        <a href="{{ item.code }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-                        <a href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database"></i> Dataset</a>
+                    <a class="publication-image-link" href="{{ item.paper }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ item.title }} paper">
+                        <img class="publication-image" src="{{ item.image | relative_url }}" alt="Overview of the EXP-Bench data collection and task validation pipeline">
+                    </a>
+                    <div class="publication-content">
+                        <h4 class="publication-title">{{ item.title }}</h4>
+                        <div class="publication-authors">{{ item.authors }}</div>
+                        <div class="publication-venue"><em>{{ item.venue }}</em></div>
+                        <p class="publication-description">{{ item.description }}</p>
+                        <div class="publication-links">
+                            <a href="{{ item.paper }}" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                            <a href="{{ item.code }}" target="_blank" rel="noopener noreferrer">[Code]</a>
+                            <a href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer">[Dataset]</a>
+                        </div>
                     </div>
                 </article>
                 {% endfor %}
