@@ -210,6 +210,37 @@ div.lazy {
     padding-bottom: 0;
 }
 
+.project-actions {
+    margin-top: 0.9rem;
+}
+
+.project-presentation-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #9f2436;
+    border-radius: 0.5rem;
+    background: #fff7f8;
+    color: #8c1d2c;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-presentation-button:hover,
+.project-presentation-button:focus {
+    background: #8c1d2c;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.35rem 0.8rem rgba(140, 29, 44, 0.2);
+}
+
+.project-button-arrow {
+    font-size: 0.8em;
+}
+
 .publication-profile-item {
     display: flex;
     align-items: flex-start;

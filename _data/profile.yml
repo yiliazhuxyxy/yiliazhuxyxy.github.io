@@ -73,6 +73,7 @@ projects:
   - name: Distributed Search Engine
     tech: C++, Distributed Systems, Information Retrieval
     date: Jan. 2026 - May 2026
+    presentation: /output/pdf/the-ranking-hat-project.pdf
     details:
       - Built a high-performance C++ indexing pipeline with compressed inverted indexes using delta and variable-byte encoding, reducing index storage by 40%.
       - Distributed indexing and retrieval across 10 nodes using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to 100M documents at over 1M indexed documents per second.

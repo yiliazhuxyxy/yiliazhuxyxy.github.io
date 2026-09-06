@@ -23,6 +23,15 @@
                         <ul class="item-details">
                             {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
                         </ul>
+                        {% if item.presentation %}
+                        <div class="project-actions">
+                            <a class="project-presentation-button" href="{{ item.presentation | relative_url }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-display" aria-hidden="true"></i>
+                                View project presentation
+                                <i class="fas fa-arrow-up-right-from-square project-button-arrow" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        {% endif %}
                     </article>
                     {% endfor %}
                 </div>
