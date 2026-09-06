@@ -190,7 +190,7 @@ projects:
       - 使用 FineWeb 数据集进行预训练，并在 SmolTalk 数据集上进行监督微调。
       - 通过 <strong>Mixed Precision、Gradient Accumulation 和 Multi-GPU Distributed Training</strong> 等优化，提升训练速度、降低显存占用并支持大批量训练。
   - name: Advanced Operating Systems
-    name_cn: 高级操作系统
+    name_cn: 操作系统核心机制实现
     tech: C++, Boost, TCP/IP
     tech_cn: C++、Boost、TCP/IP
     date: Jan. 2025 - May 2025
@@ -202,7 +202,7 @@ projects:
       - Built a <strong>multithreaded TCP RPC file server</strong> supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
     details_cn:
       - 使用 ucontext 实现<strong>单 CPU 用户级线程库</strong>，支持 FIFO 调度、定时器中断抢占、线程 join、互斥锁和条件变量。
-      - 构建<strong>按需分页虚拟内存管理器</strong>，支持 swap-backed 与 file-backed 页面、时钟置换、脏页/引用追踪、交换空间预留以及基于固定零页的写时复制。
+      - 构建<strong>按需分页虚拟内存管理器</strong>，支持 swap-backed 与 file-backed 页面、Clock 页面置换、脏页/引用追踪、交换空间预留以及基于固定零页的写时复制。
       - 构建<strong>多线程 TCP RPC 文件服务器</strong>，支持分层路径遍历、并发文件创建、删除、读取和写入，并实现 inode 级共享/排他锁及空闲块同步分配。
   - name: Evaluating Scalable RL Alternatives to Q-Learning in Soar
     name_cn: 在 Soar 中评估可扩展的 Q-Learning 替代强化学习方法
