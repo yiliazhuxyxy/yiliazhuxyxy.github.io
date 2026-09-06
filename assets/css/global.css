@@ -389,6 +389,32 @@ div.lazy {
     line-height: 1;
 }
 
+.honor-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid #edf0f2;
+}
+
+.honor-item:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.honor-item:last-child {
+    padding-bottom: 0;
+}
+
+.honor-content {
+    min-width: 0;
+}
+
+.honor-date {
+    padding-top: 0.05rem;
+}
+
 @media (max-width: 767.98px) {
     .timeline-heading {
         display: block;
@@ -421,5 +447,13 @@ div.lazy {
     .resume-viewer {
         height: 78vh;
         min-height: 560px;
+    }
+
+    .honor-item {
+        display: block;
+    }
+
+    .honor-date {
+        margin-top: 0.25rem;
     }
 }
