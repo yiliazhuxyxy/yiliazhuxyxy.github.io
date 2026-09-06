@@ -185,6 +185,32 @@ div.lazy {
     padding-bottom: 0;
 }
 
+.publication-profile-item {
+    line-height: 1.55;
+}
+
+.publication-venue {
+    color: #495057;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.publication-authors,
+.publication-citation {
+    color: #50565c;
+    margin-top: 0.3rem;
+}
+
+.publication-description {
+    margin: 0.75rem 0;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
 @media (max-width: 767.98px) {
     .timeline-heading {
         display: block;

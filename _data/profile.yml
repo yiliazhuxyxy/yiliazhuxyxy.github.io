@@ -57,6 +57,17 @@ experience:
       - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
       - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
 
+publications:
+  - title: "EXP-Bench: Can AI Conduct AI Research Experiments?"
+    venue: ICLR 2026
+    year: 2025
+    authors: "Kon, P. T. J., Liu, J., <strong>Zhu, X.</strong>, Ding, Q., Peng, J., Xing, J., Huang, Y., Qiu, Y., Srinivasa, J., Lee, M., Chowdhury, M., Zaharia, M., & Chen, A."
+    citation: "arXiv preprint arXiv:2505.24785"
+    description: Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation, including a semi-automated pipeline for extracting experimental procedures, configurations, and evaluation criteria from papers, supplementary materials, and code repositories.
+    paper: https://arxiv.org/pdf/2505.24785
+    code: https://github.com/Just-Curieous/EXP-Bench
+    dataset: https://huggingface.co/datasets/Just-Curieous/EXP-Bench
+
 projects:
   - name: Distributed Search Engine
     tech: C++, Distributed Systems, Information Retrieval
@@ -78,9 +89,3 @@ projects:
       - Implemented a single-CPU user-level thread library using ucontext, with FIFO scheduling, timer-interrupt preemption, thread joins, mutexes, and condition variables.
       - Built a demand-paged virtual memory manager supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
       - Built a multithreaded TCP RPC file server supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
-  - name: "EXP-Bench: Can AI Conduct AI Research Experiments? (ICLR 2026)"
-    tech: LLMs, Data Pipelines
-    date: Mar. 2025 - May 2025
-    details:
-      - Developed a semi-automated pipeline to extract experimental procedures, configurations, and evaluation criteria from research papers, supplementary materials, and code repositories.
-      - Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation.

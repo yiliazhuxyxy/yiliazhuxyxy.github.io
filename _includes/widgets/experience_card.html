@@ -67,6 +67,32 @@
 </section>
 {% endif %}
 
+{% if site.data.profile.publications %}
+<section class="row mt-3">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h3 class="section-title">Publications</h3>
+                {% for item in site.data.profile.publications %}
+                <article class="publication-profile-item">
+                    <h4 class="item-title">{{ item.title }}</h4>
+                    <div class="publication-venue">{{ item.venue }}</div>
+                    <div class="publication-authors">{{ item.authors }}</div>
+                    <div class="publication-citation">{{ item.year }}. {{ item.citation }}.</div>
+                    <p class="publication-description">{{ item.description }}</p>
+                    <div class="publication-links">
+                        <a href="{{ item.paper }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="{{ item.code }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                        <a href="{{ item.dataset }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database"></i> Dataset</a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
 {% if site.data.profile.projects %}
 <section class="row mt-3">
     <div class="col-12">
