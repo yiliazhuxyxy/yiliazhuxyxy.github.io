@@ -241,6 +241,58 @@ div.lazy {
     font-size: 0.8em;
 }
 
+.resume-page {
+    padding-bottom: 1rem;
+}
+
+.resume-heading {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.resume-subtitle {
+    color: #6c757d;
+    margin-top: 0.2rem;
+}
+
+.resume-download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #8c1d2c;
+    border-radius: 0.5rem;
+    background: #8c1d2c;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-download-button:hover,
+.resume-download-button:focus {
+    background: #6f1723;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.35rem 0.8rem rgba(140, 29, 44, 0.22);
+}
+
+.resume-viewer {
+    display: block;
+    width: 100%;
+    height: 1120px;
+    min-height: 75vh;
+    border: 0;
+    border-radius: 0.4rem;
+}
+
+.resume-fallback {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
 .publication-profile-item {
     align-items: flex-start;
     line-height: 1.4;
@@ -313,5 +365,10 @@ div.lazy {
     .publication-image-link {
         display: block;
         margin-bottom: 1rem;
+    }
+
+    .resume-viewer {
+        height: 78vh;
+        min-height: 560px;
     }
 }
