@@ -1,6 +1,8 @@
 primary_name: "Xinyi Zhu"
+primary_name_cn: "诸欣宜"
 secondary_name: ""
 navbar_name: "Xinyi Zhu"
+navbar_name_cn: "诸欣宜"
 
 positions:
   - name: M.S. Student in Information Networking
@@ -29,7 +31,7 @@ short_bio_cn: >-
     我是卡内基梅隆大学 Information Networking 硕士研究生，主要关注 AI Agent 系统和 AI 应用的开发。
   </p>
   <p>
-    我做过 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施相关的工作和项目。相比只让模型“能跑起来”，我也关注一个 AI 系统在真实场景里是否真的好用、稳定，以及能不能被有效评估和持续改进。
+    我的经历包括 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施。相比单纯把模型能力接进应用，我更关注整个系统在真实场景里的表现，比如结果是否可靠、系统是否稳定，以及能不能通过评估和迭代持续提升效果。
   </p>
 
 education:
@@ -62,9 +64,9 @@ education:
       - Undergraduate B-Class Excellent Scholarship (2023, 2024)
       - The John Wu & Jane Sun Sunshine Scholarship (top 5%) (2023)
     honors_cn:
-      - 国家奖学金（全国前 0.2%），中华人民共和国教育部（2024）
+      - 国家奖学金，中华人民共和国教育部（2024）
       - 上海交通大学本科生 B 等优秀奖学金（2023、2024）
-      - 吴炯与孙洁阳光奖学金（前 5%）（2023）
+      - 吴炯与孙洁阳光奖学金（2023）
   - name: University of Michigan
     name_cn: 密西根大学
     url: https://umich.edu/
@@ -87,7 +89,7 @@ education:
       - University Honors (Dec. 2024, May 2025, Dec. 2025)
     honors_cn:
       - James B. Angell Scholar（2026年3月）
-      - 院长名单（2024年12月、2025年4月、2025年12月）
+      - Dean's List（2024年12月、2025年4月、2025年12月）
       - University Honors（2024年12月、2025年5月、2025年12月）
 
 experience:
@@ -105,7 +107,7 @@ experience:
       - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
       - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
     details_cn:
-      - 设计并上线 智能编译 Oncall 助手的评估框架，结合用户反馈信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
+      - 设计并上线 智能编译Oncall助手 的评估框架，结合用户反馈信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
       - 设计并实现基于 Docker Buildx/BuildKit 的 WebShell 调试系统，将构建执行与用户会话解耦，在共享调试会话中保留失败构建的根文件系统，并为每位工程师或 AI Agent 提供隔离的 tmux shell。
       - 扩展面向容器镜像构建失败的 Multi-Agent oncall 排障系统，开发场景化 SOP-as-code 工作流、优化 Agent 路由与 Prompt 并集成构建上下文工具；<strong>AI 贡献评分提升 15.3%，MTTR 降低 11.4%</strong>。
       - 构建自演进 LLM 知识库，通过聚类问题及一致答案，将 <strong>10K+ 支持会话</strong>提炼为带置信度的问答，并利用人工反馈解决冲突、更新过时知识；<strong>召回 40.1% 的未回答问题，有效回复率从 69.3% 提升至 73.9%</strong>。

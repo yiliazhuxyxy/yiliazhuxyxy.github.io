@@ -19,7 +19,7 @@
 
         var isProjects = window.location.pathname.indexOf("projects") !== -1;
         document.title = language === "cn"
-            ? (isProjects ? "项目 - Xinyi Zhu" : "主页 - Xinyi Zhu")
+            ? (isProjects ? "项目 - 诸欣宜" : "主页 - 诸欣宜")
             : (isProjects ? "Projects - Xinyi Zhu" : "Homepage - Xinyi Zhu");
     }
 
