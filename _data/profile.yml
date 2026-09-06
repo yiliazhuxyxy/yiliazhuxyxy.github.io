@@ -86,16 +86,16 @@ projects:
     selected: true
     presentation: /output/pdf/the-ranking-hat-project.pdf
     details:
-      - Built a high-performance C++ indexing pipeline with compressed inverted indexes using delta and variable-byte encoding, reducing index storage by 40%.
-      - Distributed indexing and retrieval across 10 nodes using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to 100M documents at over 1M indexed documents per second.
-      - Ranked 1st among 14 teams in the capstone showcase for search relevance and retrieval efficiency.
+      - Built a <strong>high-performance C++ indexing pipeline</strong> with compressed inverted indexes using delta and variable-byte encoding, <strong>reducing index storage by 40%</strong>.
+      - Distributed indexing and retrieval across <strong>10 nodes</strong> using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to <strong>100M documents</strong> at <strong>over 1M indexed documents per second</strong>.
+      - <strong>Ranked 1st among 14 teams</strong> in the capstone showcase for search relevance and retrieval efficiency.
   - name: "Polaris: Graph-Based Research Index & Retrieval System"
     tech: Python, Neo4j, Cypher, FAISS
     date: May 2025 - Mar. 2026
     selected: true
     details:
-      - Built a Neo4j-based knowledge graph and data ingestion pipeline representing concepts, methods, and relationships across 60K+ computer science papers.
-      - Developed a tool-using retrieval agent that combined Cypher graph queries with vector search and employed beam-search-guided multi-path reasoning to identify relevant scientific literature.
+      - Built a <strong>Neo4j-based knowledge graph and data ingestion pipeline</strong> representing concepts, methods, and relationships across <strong>60K+ computer science papers</strong>.
+      - Developed a <strong>tool-using retrieval agent</strong> that combined Cypher graph queries with vector search and employed <strong>beam-search-guided multi-path reasoning</strong> to identify relevant scientific literature.
   - name: Open-domain Scientific Claim Verification
     tech: Programmer · MultiVerS, LoRA, PICO, Biomedical NLP
     date: Sep. 2025 - Dec. 2025
@@ -104,23 +104,23 @@ projects:
     presentation_label: "Architecture, Design & Results"
     code: https://github.com/ping-haonan/MultiVerS-PICO
     details:
-      - Enhanced MultiVerS with parameter-efficient LoRA fine-tuning and PICO-augmented inputs for biomedical claim verification.
-      - Improved sentence-level rationale extraction on SciFact-Open, achieving 11.52% precision, 5.62% recall, and 7.56% F1 gains.
+      - Enhanced MultiVerS with <strong>parameter-efficient LoRA fine-tuning</strong> and <strong>PICO-augmented inputs</strong> for biomedical claim verification.
+      - Improved sentence-level rationale extraction on SciFact-Open, achieving <strong>11.52% precision</strong>, <strong>5.62% recall</strong>, and <strong>7.56% F1 gains</strong>.
   - name: GPT Reproduction
     tech: Programmer · GPT-style Decoder, FineWeb, SmolTalk
     date: Oct. 2025 - Nov. 2025
     selected: false
     details:
-      - Implemented a GPT-style decoder model with 60M parameters and conducted pretraining on the FineWeb dataset, followed by supervised fine-tuning on SmolTalk to enable dialogue capability.
-      - Achieved a basic chatbot capable of coherent dialogue after 15-hour pretraining and 4-hour fine-tuning.
+      - Implemented a <strong>GPT-style decoder model with 60M parameters</strong> and conducted pretraining on the FineWeb dataset, followed by supervised fine-tuning on SmolTalk to enable dialogue capability.
+      - Achieved a basic chatbot capable of coherent dialogue after <strong>15-hour pretraining</strong> and <strong>4-hour fine-tuning</strong>.
   - name: Advanced Operating Systems
     tech: C++, Boost, TCP/IP
     date: Jan. 2025 - May 2025
     selected: true
     details:
-      - Implemented a single-CPU user-level thread library using ucontext, with FIFO scheduling, timer-interrupt preemption, thread joins, mutexes, and condition variables.
-      - Built a demand-paged virtual memory manager supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
-      - Built a multithreaded TCP RPC file server supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
+      - Implemented a <strong>single-CPU user-level thread library</strong> using ucontext, with FIFO scheduling, timer-interrupt preemption, thread joins, mutexes, and condition variables.
+      - Built a <strong>demand-paged virtual memory manager</strong> supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
+      - Built a <strong>multithreaded TCP RPC file server</strong> supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
   - name: Evaluating Scalable RL Alternatives to Q-Learning in Soar
     tech: "Student Research Assistant · Explore CS Research Program, University of Michigan · Advisor: Dr. Robert Wray"
     date: Nov. 2024 - May 2025
@@ -130,6 +130,6 @@ projects:
     code: https://github.com/Center-for-Integrated-Cognition/hybrid-discrete-continuous-RL
     video: https://www.youtube.com/watch?v=wS2sKQ1Quu8
     details:
-      - Implemented DQN/PPO/A2C variants for symbolic-continuous integration in the Soar architecture.
-      - Evaluated performance across environments (CartPole and LunarLander), identifying effects of environment complexity and state discretization.
-      - Presented at the 45th Soar Workshop.
+      - Implemented <strong>DQN/PPO/A2C variants</strong> for symbolic-continuous integration in the Soar architecture.
+      - Evaluated performance across <strong>CartPole and LunarLander</strong>, identifying effects of environment complexity and state discretization.
+      - Presented at the <strong>45th Soar Workshop</strong>.
