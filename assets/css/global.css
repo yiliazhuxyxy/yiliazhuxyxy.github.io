@@ -242,14 +242,12 @@ div.lazy {
 }
 
 .publication-profile-item {
-    display: flex;
     align-items: flex-start;
-    gap: 1.5rem;
     line-height: 1.4;
 }
 
 .publication-image-link {
-    flex: 0 0 34%;
+    display: block;
 }
 
 .publication-image {
@@ -260,7 +258,6 @@ div.lazy {
 }
 
 .publication-content {
-    flex: 1;
     min-width: 0;
 }
 
