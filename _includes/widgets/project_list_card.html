@@ -31,7 +31,7 @@
                         <div class="project-actions">
                             {% if item.presentation %}
                             <a class="publication-resource-link resource-project" href="{{ item.presentation | relative_url }}" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-diagram-project" aria-hidden="true"></i><span>Architecture, Design &amp; Demo</span>
+                                <i class="fas fa-diagram-project" aria-hidden="true"></i><span>{{ item.presentation_label | default: "Architecture, Design & Demo" }}</span>
                             </a>
                             {% endif %}
                             {% if item.code %}

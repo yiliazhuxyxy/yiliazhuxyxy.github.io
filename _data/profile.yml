@@ -98,6 +98,8 @@ projects:
     tech: Programmer · MultiVerS, LoRA, PICO, Biomedical NLP
     date: Sep. 2025 - Dec. 2025
     selected: false
+    presentation: /output/posters/multivers-pico-poster.png
+    presentation_label: Architecture, Design & Results
     code: https://github.com/ping-haonan/MultiVerS-PICO
     details:
       - Enhanced MultiVerS with parameter-efficient LoRA fine-tuning and PICO-augmented inputs for biomedical claim verification.
@@ -121,6 +123,8 @@ projects:
     tech: Student Research Assistant · Explore CS Research Program, University of Michigan · Advisor: Dr. Robert Wray
     date: Nov. 2024 - May 2025
     selected: false
+    presentation: /output/posters/explorecs-rl-poster.png
+    presentation_label: Architecture, Design & Results
     code: https://github.com/Center-for-Integrated-Cognition/hybrid-discrete-continuous-RL
     video: https://www.youtube.com/watch?v=wS2sKQ1Quu8
     details:
