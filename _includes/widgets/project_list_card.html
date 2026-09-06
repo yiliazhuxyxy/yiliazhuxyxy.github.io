@@ -9,8 +9,13 @@
                         <a class="view-all-inline" href="{{ '/projects' | relative_url }}" aria-label="View all projects">(view all <span aria-hidden="true">&raquo;</span>)</a>{% endif %}
                     </h3>
                 </div>
+                {% if include.selected_only %}
+                    {% assign projects_to_show = site.data.profile.projects | where: "selected", true %}
+                {% else %}
+                    {% assign projects_to_show = site.data.profile.projects %}
+                {% endif %}
                 <div class="project-list">
-                    {% for item in site.data.profile.projects %}
+                    {% for item in projects_to_show %}
                     <article class="project-item">
                         <div class="timeline-heading">
                             <div>
@@ -22,13 +27,23 @@
                         <ul class="item-details">
                             {% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}
                         </ul>
-                        {% if item.presentation %}
+                        {% if item.presentation or item.code or item.video %}
                         <div class="project-actions">
-                            <a class="project-presentation-button" href="{{ item.presentation | relative_url }}" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-display" aria-hidden="true"></i>
-                                View Architecture, Design &amp; Demo
-                                <i class="fas fa-arrow-up-right-from-square project-button-arrow" aria-hidden="true"></i>
+                            {% if item.presentation %}
+                            <a class="publication-resource-link resource-project" href="{{ item.presentation | relative_url }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-diagram-project" aria-hidden="true"></i><span>Architecture, Design &amp; Demo</span>
                             </a>
+                            {% endif %}
+                            {% if item.code %}
+                            <a class="publication-resource-link resource-github" href="{{ item.code }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i><span>Code</span>
+                            </a>
+                            {% endif %}
+                            {% if item.video %}
+                            <a class="publication-resource-link resource-youtube" href="{{ item.video }}" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube" aria-hidden="true"></i><span>Video</span>
+                            </a>
+                            {% endif %}
                         </div>
                         {% endif %}
                     </article>
