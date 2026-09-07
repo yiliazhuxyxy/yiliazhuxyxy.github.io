@@ -3,6 +3,7 @@ primary_name_cn: "诸欣宜"
 secondary_name: ""
 navbar_name: "Xinyi Zhu"
 navbar_name_cn: "诸欣宜"
+bilingual_enabled: false
 
 positions:
   - name: M.S. Student in Information Networking

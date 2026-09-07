@@ -12,12 +12,14 @@
                     <a class="nav-link language-aware-link" href="{{ item.url | relative_url }}">{% include bilingual.html en=item.name cn=item.name_cn %}</a>
                 </li>
                 {% endfor %}
+                {% if site.data.profile.bilingual_enabled %}
                 <li class="nav-item language-switch-item">
                     <button class="language-switch" type="button" data-language-switch aria-label="Switch language">
                         <i class="fas fa-language" aria-hidden="true"></i>
                         <span class="lang-en">中文</span><span class="lang-cn">EN</span>
                     </button>
                 </li>
+                {% endif %}
             </ul>
         </div>
     </div>

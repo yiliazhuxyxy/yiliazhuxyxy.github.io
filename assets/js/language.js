@@ -1,5 +1,6 @@
 (function () {
     function currentLanguage() {
+        if (!window.siteBilingualEnabled) return "en";
         return new URLSearchParams(window.location.search).get("lang") === "cn" ? "cn" : "en";
     }
 
@@ -7,7 +8,11 @@
         document.querySelectorAll("a.language-aware-link").forEach(function (link) {
             var url = new URL(link.href, window.location.origin);
             if (url.origin !== window.location.origin) return;
-            url.searchParams.set("lang", language);
+            if (window.siteBilingualEnabled) {
+                url.searchParams.set("lang", language);
+            } else {
+                url.searchParams.delete("lang");
+            }
             link.href = url.pathname + url.search + url.hash;
         });
     }
@@ -26,6 +31,15 @@
     document.addEventListener("DOMContentLoaded", function () {
         var language = currentLanguage();
         setPageLanguage(language);
+
+        if (!window.siteBilingualEnabled) {
+            var cleanUrl = new URL(window.location.href);
+            if (cleanUrl.searchParams.has("lang")) {
+                cleanUrl.searchParams.delete("lang");
+                window.history.replaceState({}, "", cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
+            }
+            return;
+        }
 
         document.querySelectorAll("[data-language-switch]").forEach(function (button) {
             button.addEventListener("click", function () {
