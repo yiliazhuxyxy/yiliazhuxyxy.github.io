@@ -57,9 +57,9 @@ education:
     date: Sep. 2022 - Aug. 2026
     date_cn: 2022年9月 – 2026年8月
     details:
-      - "GPA: 3.85"
+      - "GPA: 3.85/4.00"
     details_cn:
-      - "GPA：3.85"
+      - "GPA：3.85/4.00"
     honors:
       - China National Scholarship (top 0.2% nationwide), Ministry of Education of the People's Republic of China (2024)
       - Undergraduate B-Class Excellent Scholarship (2023, 2024)
@@ -103,10 +103,11 @@ experience:
     date: May 2026 - Aug. 2026
     date_cn: 2026年5月 – 2026年8月
     details:
-      - Designed and launched an evaluation framework for an LLM-powered on-call assistant, combining user-adoption signals with LLM-as-a-judge scoring; evaluated 2,900+ response rounds across 1,300+ support chats and surfaced low-quality cases for targeted iteration.
-      - Designed and implemented a Docker Buildx/BuildKit-based WebShell debugging system that decoupled build execution from user sessions, preserved failed-build root filesystems in a shared debug session, and provided each engineer or AI agent an isolated tmux shell for collaborative troubleshooting.
-      - Extended a multi-agent on-call troubleshooting system for container-image build failures by developing scenario-specific SOP-as-code workflows, refining agent routing and prompts, and integrating build-context tools; increased the AI contribution score by 15.3% and reduced MTTR by 11.4%.
-      - Built a self-evolving LLM knowledge base that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%.
+      - <strong>Built a self-evolving LLM knowledge base<strong> that distilled 10K+ support chats into confidence-scored Q&A by clustering questions and consistent answers, while using human feedback to resolve conflicts and refresh stale knowledge; <strong>recovered 40.1% of unanswered queries and raised useful-response rate from 69.3% to 73.9%<strong>.
+      - Extended an <strong>on-call troubleshooting agent<strong> for container-image build failures by developing <strong>scenario-specific SOP-as-code workflows<strong>, refining agent routing and prompts, and integrating build-context tools; increased the <strong>AI contribution score by 15.3% and reduced MTTR by 11.4%<strong>.
+      - Designed and launched an <strong>evaluation framework for an LLM-powered on-call assistant<strong>, combining user-adoption signals with LLM-as-a-judge scoring; evaluated 2,900+ response rounds across 1,300+ support chats and surfaced low-quality cases for targeted iteration.
+      - Designed and implemented a <strong>Docker Buildx/BuildKit-based WebShell debugging system<strong> that decoupled build execution from user sessions, preserved failed-build root filesystems in a shared debug session, and provided each engineer or AI agent an isolated tmux shell for collaborative troubleshooting.
+
     details_cn:
       - 设计并上线 智能编译Oncall助手 的评估框架，结合用户反馈信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
       - 设计并实现基于 Docker Buildx/BuildKit 的 WebShell 调试系统，将构建执行与用户会话解耦，在共享调试会话中保留失败构建的根文件系统，并为每位工程师或 AI Agent 提供隔离的 tmux shell。
