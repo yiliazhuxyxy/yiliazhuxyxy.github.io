@@ -29,10 +29,13 @@ short_bio: >-
   </p>
 short_bio_cn: >-
   <p>
-    我是卡内基梅隆大学 Information Networking 硕士研究生，主要关注 AI Agent 系统和 AI 应用的开发。
+    我是卡内基梅隆大学 Information Networking 专业的硕士研究生，主要关注 <strong>AI Agent 系统与 AI 应用开发</strong>。
   </p>
   <p>
-    我的经历包括 Agent Workflow、Agent Evaluation、知识与检索系统以及后端基础设施。相比单纯把模型能力接进应用，我更关注整个系统在真实场景里的表现，比如结果是否可靠、系统是否稳定，以及能不能通过评估和迭代持续提升效果。
+    我的技术经历涵盖 <strong>Agent Workflow 设计、智能体评估、知识与检索系统以及后端基础设施</strong>。相比单纯将大模型能力集成到应用中，我更关注如何构建真正实用、可靠的智能系统，包括复杂任务的自主执行、系统的稳定性，以及如何通过持续评估与迭代优化实际效果。
+  </p>
+  <p>
+    我希望继续探索 <strong>AI 与软件系统的深度结合</strong>，让智能体不仅能够完成任务，更能在复杂、动态的真实环境中稳定运行，并创造实际价值。
   </p>
 
 education:

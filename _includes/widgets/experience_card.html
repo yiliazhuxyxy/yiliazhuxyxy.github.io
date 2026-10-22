@@ -31,7 +31,7 @@
                             <div class="education-honors">
                                 <span class="education-honors-label"><i class="fas fa-award" aria-hidden="true"></i> {% include bilingual.html en="Honors:" cn="荣誉：" %}</span>
                                 <span class="lang-en">{% for honor in item.honors %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}</span>
-                                <span class="lang-cn">{% for honor in item.honors_cn %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}<span class="education-honor-separator" aria-hidden="true">•</span>{% endunless %}{% endfor %}</span>
+                                <span class="lang-cn">{% for honor in item.honors_cn %}<span class="education-honor">{{ honor }}</span>{% unless forloop.last %}，{% endunless %}{% endfor %}</span>
                             </div>
                             {% endif %}
                         </div>
