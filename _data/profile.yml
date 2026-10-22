@@ -161,9 +161,9 @@ projects:
       - 设计并实现面向 <strong>6 万余篇计算机科学论文</strong>的知识提取与索引流水线，基于 Neo4j 构建涵盖研究概念、技术方法及其关联关系的知识图谱，实现科研知识的结构化组织与关联检索。
       - 构建<strong>知识图谱查询与向量语义混合检索的科研 Agent</strong>，通过工具调用动态执行图谱查询与向量搜索，结合 Beam Search 多路径推理优化文献检索效果；<strong>LitSearch Benchmark Recall@20 从 75.3% 提升至 80.2%</strong>。
   - name: Open-domain Scientific Claim Verification
-    name_cn: 开放域科学论断验证
+    name_cn: MultiVerS-PICO：医学文献事实验证模型
     tech: Python, PyTorch, Hugging Face Transformers, LoRA
-    tech_cn: Python、PyTorch、Hugging Face Transformers、LoRA
+    tech_cn: Python、PyTorch、Longformer、BioELECTRA、LoRA、注意力机制
     date: Sep. 2025 - Dec. 2025
     date_cn: 2025年9月 – 2025年12月
     selected: false
@@ -175,14 +175,12 @@ projects:
       - Enhanced MultiVerS with <strong>parameter-efficient LoRA fine-tuning</strong> and <strong>PICO-augmented inputs</strong> for biomedical claim verification.
       - Improved sentence-level rationale extraction on SciFact-Open, achieving <strong>11.52% precision</strong>, <strong>5.62% recall</strong>, and <strong>7.56% F1 gains</strong>.
     details_cn:
-      - 构建面向科研文献的论断验证流程，处理论文结论与证据句之间的匹配问题。
-      - 在 MultiVerS 模型基础上引入 <strong>LoRA 参数高效微调</strong>，降低训练成本并提升模型适应性。
-      - 设计基于 <strong>PICO 结构</strong>的输入方式，增强模型对医学论断关键要素的理解。
-      - 成果：在 SciFact-Open 数据集上提升句级论据抽取性能（<strong>Precision +11.52%，Recall +5.62%，F1 +7.56%</strong>）。
+      - 基于 <strong>Longformer 与 BioELECTRA-PICO</strong> 构建双路医学文本编码架构，通过 Longformer 联合建模医学声明与论文摘要，结合 BioELECTRA 提取的医学实体表示，利用<strong>注意力机制融合上下文语义与领域知识</strong>，增强模型对医学证据的理解能力。
+      - 设计共享表示的<strong>证据句识别与文献立场分类双任务模型</strong>，联合预测关键证据与支持、反驳等分类结果；采用 <strong>LoRA 低秩适配与加权联合损失</strong>进行参数高效训练，降低需要更新的模型参数量。
   - name: GPT Reproduction
-    name_cn: GPT 模型复现
+    name_cn: GPT 模型复现与训练优化
     tech: Python, PyTorch, Mixed Precision, Distributed Training
-    tech_cn: Python、PyTorch、Mixed Precision、Distributed Training
+    tech_cn: Python、PyTorch、Transformer、混合精度训练、分布式训练
     date: Oct. 2025 - Nov. 2025
     date_cn: 2025年10月 – 2025年11月
     selected: false
@@ -190,9 +188,8 @@ projects:
       - Implemented a <strong>GPT-style decoder model with 60M parameters</strong> and conducted pretraining on the FineWeb dataset, followed by supervised fine-tuning on SmolTalk to enable dialogue capability.
       - Achieved a basic chatbot capable of coherent dialogue after <strong>15-hour pretraining</strong> and <strong>4-hour fine-tuning</strong>.
     details_cn:
-      - 实现 <strong>GPT 风格解码器模型（约 6,000 万参数）</strong>，完成模型结构与训练流程搭建。
-      - 使用 FineWeb 数据集进行预训练，并在 SmolTalk 数据集上进行监督微调。
-      - 通过 <strong>Mixed Precision、Gradient Accumulation 和 Multi-GPU Distributed Training</strong> 等优化，提升训练速度、降低显存占用并支持大批量训练。
+      - 基于 <strong>PyTorch</strong> 从零实现约 <strong>6,000 万参数的 GPT 风格 Transformer 解码器模型</strong>，搭建完整的模型训练流水线，使用 <strong>FineWeb 数据集进行预训练</strong>，并基于 <strong>SmolTalk 数据集完成监督微调（SFT）</strong>。
+      - 采用<strong>混合精度训练、梯度累积与多 GPU 分布式训练</strong>优化训练流程，在降低显存开销的同时支持更大批量训练，提升模型训练效率与资源利用率。
   - name: Advanced Operating Systems
     name_cn: 操作系统
     tech: C++, Boost, TCP/IP
@@ -211,7 +208,7 @@ projects:
   - name: Evaluating Scalable RL Alternatives to Q-Learning in Soar
     name_cn: 在 Soar 中评估可扩展的 Q-Learning 替代强化学习方法
     tech: Python, Stable-Baselines3, OpenAI Gym, Soar
-    tech_cn: Python、Stable-Baselines3、OpenAI Gym、Soar
+    tech_cn: Python、PyTorch、Stable-Baselines3、OpenAI Gym、Soar、强化学习
     date: Nov. 2024 - May 2025
     date_cn: 2024年11月 – 2025年5月
     selected: false
@@ -225,6 +222,5 @@ projects:
       - Evaluated performance across <strong>CartPole and LunarLander</strong>, identifying effects of environment complexity and state discretization.
       - Presented at the <strong>45th Soar Workshop</strong>.
     details_cn:
-      - 调研并实现可同时处理离散与连续状态的<strong>强化学习算法</strong>，用于评估其在 Soar 认知架构中的适用性。
-      - 基于 <strong>CartPole、LunarLander</strong> 等标准环境，对 <strong>DQN、PPO、A2C</strong> 等算法进行实验对比。
-      - 分析环境复杂度与状态离散化方式对学习效果的影响。
+      - 针对 <strong>Soar 认知架构中 Q-Learning 在混合离散与连续状态空间下的可扩展性问题</strong>，研究并实验对比 <strong>DQN、PPO、A2C</strong> 等强化学习算法，探索替代传统 Q-Learning 的可行方案。
+      - 基于 <strong>CartPole 与 LunarLander</strong> 环境，设计不同状态离散化粒度的对照实验，分析<strong>状态空间规模、环境复杂度与训练效率</strong>对算法收敛速度和奖励表现的影响，识别不同算法在训练稳定性与可扩展性方面的局限。
