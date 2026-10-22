@@ -3,7 +3,7 @@ primary_name_cn: "诸欣宜"
 secondary_name: ""
 navbar_name: "Xinyi Zhu"
 navbar_name_cn: "诸欣宜"
-bilingual_enabled: false
+bilingual_enabled: true
 
 positions:
   - name: M.S. Student in Information Networking
@@ -45,7 +45,9 @@ education:
     position: Master of Science in Information Networking
     position_cn: 信息网络硕士
     date: Expected Dec. 2027
-    date_cn: 预计 2027年12月毕业
+    date_cn: 2026年8月 – 2027年12月
+    details_cn:
+      - "相关课程：深度学习系统、计算机网络"
   - name: University of Michigan-Shanghai Jiao Tong University Joint Institute
     name_cn: 上海交通大学密西根学院
     url: https://www.ji.sjtu.edu.cn/
@@ -53,13 +55,14 @@ education:
     location: Shanghai, China
     location_cn: 中国上海
     position: Bachelor of Engineering in Mechanical Engineering
-    position_cn: 机械工程工学学士
+    position_cn: 机械工程本科
     date: Sep. 2022 - Aug. 2026
     date_cn: 2022年9月 – 2026年8月
     details:
       - "GPA: 3.85/4.00"
     details_cn:
       - "GPA：3.85/4.00"
+      - "专业排名：3/61"
     honors:
       - China National Scholarship (top 0.2% nationwide), Ministry of Education of the People's Republic of China (2024)
       - Undergraduate B-Class Excellent Scholarship (2023, 2024)
@@ -69,13 +72,13 @@ education:
       - 上海交通大学本科生 B 等优秀奖学金（2023、2024）
       - 吴炯与孙洁阳光奖学金（2023）
   - name: University of Michigan
-    name_cn: 密西根大学
+    name_cn: 密西根大学安娜堡分校
     url: https://umich.edu/
     logo: /assets/images/badges/umich-logo.svg
     location: Ann Arbor, MI
     location_cn: 美国密歇根州安娜堡
     position: Bachelor of Science in Computer Science
-    position_cn: 计算机科学理学学士
+    position_cn: 计算机科学本科
     date: Aug. 2024 - May 2026
     date_cn: 2024年8月 – 2026年5月
     details:
@@ -83,7 +86,7 @@ education:
       - "Coursework: Web Systems, Operating Systems, System Design of a Search Engine, Machine Learning, Natural Language Processing, Reinforcement Learning"
     details_cn:
       - "GPA：4.00/4.00"
-      - "相关课程：Web 系统、操作系统、搜索引擎系统设计、机器学习、自然语言处理、强化学习"
+      - "相关课程：操作系统、搜索引擎、Web 系统开发、自然语言处理、机器学习"
     honors:
       - James B. Angell Scholar (Mar. 2026)
       - Dean's List (Dec. 2024, Apr. 2025, Dec. 2025)
@@ -109,10 +112,9 @@ experience:
       - Designed and implemented a <strong>Docker Buildx/BuildKit-based WebShell debugging system</strong> that decoupled build execution from user sessions, preserved failed-build root filesystems in a shared debug session, and provided each engineer or AI agent an isolated tmux shell for collaborative troubleshooting.
 
     details_cn:
-      - 设计并上线 智能编译Oncall助手 的评估框架，结合用户反馈信号与 LLM-as-a-judge 评分；评估 <strong>1,300+ 个支持会话中的 2,900+ 轮回复</strong>，并定位低质量案例以支持定向迭代。
-      - 设计并实现基于 Docker Buildx/BuildKit 的 WebShell 调试系统，将构建执行与用户会话解耦，在共享调试会话中保留失败构建的根文件系统，并为每位工程师或 AI Agent 提供隔离的 tmux shell。
-      - 扩展面向容器镜像构建失败的 Multi-Agent oncall 排障系统，开发场景化 SOP-as-code 工作流、优化 Agent 路由与 Prompt 并集成构建上下文工具；<strong>AI 贡献评分提升 15.3%，MTTR 降低 11.4%</strong>。
-      - 构建自演进 LLM 知识库，通过聚类问题及一致答案，将 <strong>10K+ 支持会话</strong>提炼为带置信度的问答，并利用人工反馈解决冲突、更新过时知识；<strong>召回 40.1% 的未回答问题，有效回复率从 69.3% 提升至 73.9%</strong>。
+      - 设计并上线面向 <strong>LLM Oncall 助手的自动化评估框架</strong>，利用用户采纳信号进行 LLM-as-a-Judge 评分，对 <strong>1,300+ 个 Oncall 会话、2,900+ 轮 Agent 响应</strong>进行质量评估，定位低质量回复与典型失败场景，为 Agent 效果分析及迭代优化提供数据支撑。
+      - 面向镜像构建失败场景，设计并实现基于 <strong>SOP-as-Code 的排障 Agent</strong>，将标准化排障流程转化为可执行工作流，优化任务路由、Prompt 编排与构建上下文工具调用，实现多步骤故障诊断与处理；推动 <strong>Agent 有效贡献率提升 15.3%，平均故障恢复时间（MTTR）降低 11.4%</strong>。
+      - 设计并构建面向 Oncall Agent 的 <strong>LLM 驱动自进化知识库</strong>，从 10K+ 条历史 Oncall 记录中通过聚类与知识抽取生成高置信问答对，结合人工反馈完成知识冲突消解与过时内容更新；使 Agent <strong>有效回答 40.1% 此前无法处理的问题，整体有效回复率由 69.3% 提升至 73.9%</strong>。
 
 publications:
   - title: "EXP-Bench: Can AI Conduct AI Research Experiments?"
@@ -123,7 +125,7 @@ publications:
     authors: "Kon, P. T. J., Liu, J., <strong>Zhu, X.</strong>, Ding, Q., Peng, J., Xing, J., Huang, Y., Qiu, Y., Srinivasa, J., Lee, M., Chowdhury, M., Zaharia, M., & Chen, A."
     citation: "arXiv preprint arXiv:2505.24785"
     description: Contributed to a scalable benchmark that reconstructs executable research tasks from scientific literature to evaluate AI agents on real-world experimentation, including a semi-automated pipeline for extracting experimental procedures, configurations, and evaluation criteria from papers, supplementary materials, and code repositories.
-    description_cn: 参与构建可扩展 Benchmark，从科学文献中重建可执行研究任务，以评估 AI Agent 开展真实实验的能力；其中包括一套半自动化 Pipeline，用于从论文、补充材料和代码仓库中提取实验流程、配置及评估标准。
+    description_cn: 实现基于 LLM 的自动化科研文档处理流水线，整合论文正文、补充材料及代码仓库，通过 PDF 文本解析与图表信息提取，抽取实验流程、模型配置和评估标准，将科研资料转化为结构化实验信息。设计分阶段的 LLM 任务生成与分析流程，从科研论文中识别可复现的实验目标，进一步提取执行步骤、实验配置与评价要求，支持将真实科研实验转化为可执行的评测任务，用于评估 AI Agent 的自主科研实验能力。
     image: /assets/images/covers/exp-bench-overview.png
     paper: https://arxiv.org/pdf/2505.24785
     code: https://github.com/Just-Curieous/EXP-Bench
@@ -133,7 +135,7 @@ projects:
   - name: Distributed Search Engine
     name_cn: 分布式搜索引擎
     tech: C++, Distributed Systems, Information Retrieval
-    tech_cn: C++、分布式系统、信息检索
+    tech_cn: C++、分布式系统、信息检索、索引压缩、内存映射、多线程
     date: Jan. 2026 - May 2026
     date_cn: 2026年1月 – 2026年5月
     selected: true
@@ -143,13 +145,12 @@ projects:
       - Distributed indexing and retrieval across <strong>10 nodes</strong> using index sharding, parallel local ranking, and scatter-gather aggregation, scaling to <strong>100M documents</strong> at <strong>over 1M indexed documents per second</strong>.
       - <strong>Ranked 1st among 14 teams</strong> in the capstone showcase for search relevance and retrieval efficiency.
     details_cn:
-      - 构建<strong>高性能 C++ 索引流水线</strong>，使用差分编码与变长字节编码压缩倒排索引，<strong>索引存储空间减少 40%</strong>。
-      - 利用索引分片、并行本地排序和 scatter-gather 聚合，在 <strong>10 个节点</strong>上实现分布式索引与检索，扩展至 <strong>1 亿篇文档</strong>，索引速度<strong>超过每秒 100 万篇文档</strong>。
-      - 在毕业设计项目中，搜索相关性与检索效率<strong>位列 14 支团队第 1 名</strong>。
+      - 构建<strong>高性能倒排索引构建流水线</strong>，采用 Delta Encoding 和 Variable-byte Encoding 压缩索引数据，结合分段存储与索引合并机制优化存储效率，<strong>降低索引存储空间 40%</strong>。
+      - 设计并实现基于 <strong>10 个节点</strong>的分布式索引与检索系统，通过索引分片、并行查询与结果聚合实现高效分布式检索，<strong>支持亿级文档规模，索引吞吐量超过 100 万篇/秒</strong>。
   - name: "Polaris: Graph-Based Research Index & Retrieval System"
-    name_cn: "Polaris：基于图的科研索引与检索系统"
+    name_cn: 知识图谱与智能科研检索系统
     tech: Python, Neo4j, Cypher, FAISS
-    tech_cn: Python、Neo4j、Cypher、FAISS
+    tech_cn: Python、Neo4j、FAISS、知识图谱、混合检索、AI Agent
     date: May 2025 - Mar. 2026
     date_cn: 2025年5月 – 2026年3月
     selected: true
@@ -157,9 +158,8 @@ projects:
       - Built a <strong>Neo4j-based knowledge graph and data ingestion pipeline</strong> representing concepts, methods, and relationships across <strong>60K+ computer science papers</strong>.
       - Developed a <strong>tool-using retrieval agent</strong> that combined Cypher graph queries with vector search and employed <strong>beam-search-guided multi-path reasoning</strong> to identify relevant scientific literature.
     details_cn:
-      - 使用 <strong>Neo4j 构建科研论文知识图谱</strong>。
-      - 设计论文数据入库与关系生成流程，覆盖<strong>6 万余篇计算机科学论文</strong>。
-      - 结合图结构查询与向量检索，通过 <strong>Beam Search 引导的多路径搜索</strong>，调用工具选取最优科研资料。
+      - 设计并实现面向 <strong>6 万余篇计算机科学论文</strong>的知识提取与索引流水线，基于 Neo4j 构建涵盖研究概念、技术方法及其关联关系的知识图谱，实现科研知识的结构化组织与关联检索。
+      - 构建<strong>知识图谱查询与向量语义混合检索的科研 Agent</strong>，通过工具调用动态执行图谱查询与向量搜索，结合 Beam Search 多路径推理优化文献检索效果；<strong>LitSearch Benchmark Recall@20 从 75.3% 提升至 80.2%</strong>。
   - name: Open-domain Scientific Claim Verification
     name_cn: 开放域科学论断验证
     tech: Python, PyTorch, Hugging Face Transformers, LoRA
@@ -194,9 +194,9 @@ projects:
       - 使用 FineWeb 数据集进行预训练，并在 SmolTalk 数据集上进行监督微调。
       - 通过 <strong>Mixed Precision、Gradient Accumulation 和 Multi-GPU Distributed Training</strong> 等优化，提升训练速度、降低显存占用并支持大批量训练。
   - name: Advanced Operating Systems
-    name_cn: 操作系统核心机制实现
+    name_cn: 操作系统
     tech: C++, Boost, TCP/IP
-    tech_cn: C++、Boost、TCP/IP
+    tech_cn: C++、Boost、TCP/IP、虚拟内存、并发同步
     date: Jan. 2025 - May 2025
     date_cn: 2025年1月 – 2025年5月
     selected: true
@@ -205,9 +205,9 @@ projects:
       - Built a <strong>demand-paged virtual memory manager</strong> supporting swap-backed and file-backed pages, clock-based eviction, dirty/reference tracking, eager swap reservation, and copy-on-write from a pinned zero page.
       - Built a <strong>multithreaded TCP RPC file server</strong> supporting hierarchical path traversal and concurrent file creation, deletion, reading, and writing, with inode-level shared/exclusive locking and synchronized free-block allocation.
     details_cn:
-      - 使用 ucontext 实现<strong>单 CPU 用户级线程库</strong>，支持 FIFO 调度、定时器中断抢占、线程 join、互斥锁和条件变量。
-      - 构建<strong>按需分页虚拟内存管理器</strong>，支持 swap-backed 与 file-backed 页面、Clock 页面置换、脏页/引用追踪、交换空间预留以及基于固定零页的写时复制。
-      - 构建<strong>多线程 TCP RPC 文件服务器</strong>，支持分层路径遍历、并发文件创建、删除、读取和写入，并实现 inode 级共享/排他锁及空闲块同步分配。
+      - 基于 ucontext 实现<strong>单 CPU 用户级线程库</strong>，支持 FIFO 调度、定时器中断驱动的抢占式调度、线程创建与 Join，以及互斥锁和条件变量。
+      - 设计并实现<strong>按需分页虚拟内存管理器</strong>，支持文件映射与匿名内存管理，采用 Clock 页面置换算法优化物理内存分配，并通过 Copy-on-Write 减少不必要的内存开销。
+      - 基于 TCP/IP、Boost 实现<strong>多线程远程文件服务器</strong>，支持层级目录管理、文件创建、删除、读取和写入；通过文件节点级读写锁、路径遍历加锁与空闲磁盘块同步分配实现细粒度并发控制，保障文件系统数据一致性。
   - name: Evaluating Scalable RL Alternatives to Q-Learning in Soar
     name_cn: 在 Soar 中评估可扩展的 Q-Learning 替代强化学习方法
     tech: Python, Stable-Baselines3, OpenAI Gym, Soar
